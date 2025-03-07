@@ -7,15 +7,16 @@
    Atraso da Transição (transition-delay)
 */
 .caixa {
-    width: 200px;
-    height: 100px;
-    background-color: blue;
-    color: white;
-    text-align: center;
-    line-height: 100px;
-    transition-property: background-color, transform; /* Especifica que a background-color e a transform serão animadas. */
-    transition-duration: 2s; /* Define que a transição levará 2 segundos para completar. */
-    transition-timing-function: ease-in-out; /* Define que a transição usará uma função de temporização ease-in-out, que começa e termina devagar. */
+  width: 200px;
+  height: 100px;
+  background-color: rgb(103, 103, 126);
+  color: #ca6666;
+  text-align: center;
+  line-height: 100px;
+  border-radius: 5px;
+  transition-property: background-color, transform; /* Especifica que a background-color e a transform serão animadas. */
+  transition-duration: 0.5s; /* Define que a transição levará 2 segundos para completar. */
+  transition-timing-function: ease-in-out; /* Define que a transição usará uma função de temporização ease-in-out, que começa e termina devagar. */
 }
 
 /* Estilo ao passar o mouse */
@@ -24,6 +25,6 @@
     Quando o usuário passa o mouse sobre o elemento .caixa, a cor de fundo muda para vermelho e o elemento gira 360 graus.
 */
 .caixa:hover {
-    background-color: red; /* Cor de fundo muda para vermelho */
-    transform: rotate(360deg); /* Caixa gira 360 graus */
+  background-color: #a13030; /* Cor de fundo muda para vermelho */
+  transform: rotate(1800deg); /* Caixa gira 360 graus */
 }

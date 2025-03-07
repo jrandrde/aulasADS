@@ -10,11 +10,11 @@ Eles especificam como o estilo de um elemento deve mudar em determinados pontos 
 */
 @keyframes mover-e-mudar-cor {
   from {
-    background-color: red;
+    background-color: rgb(1, 179, 40);
     transform: translateX(0);
   }
   to {
-    background-color: yellow;
+    background-color: rgb(238, 255, 0);
     transform: translateX(100px);
   }
 }
@@ -36,10 +36,10 @@ Principais Propriedades de Animação:
 .animacao {
   width: 100px;
   height: 100px;
-  background-color: red;
+  background-color: rgb(1, 69, 255);
   animation-name: mover-e-mudar-cor; /* Nome da animação definida nos keyframes.*/
-  animation-duration: 2s; /* Duração da animação. */
+  animation-duration: 1.3s; /* Duração da animação. */
   animation-timing-function: ease-in-out; /* Função de temporização da animação (por exemplo, linear, ease, ease-in, ease-out). */
   animation-iteration-count: infinite; /* Número de vezes que a animação deve se repetir. */
-  animation-direction: alternate; /* Direção da animação (normal, reverse, alternate, alternate-reverse). */
+  animation-direction: alternate-reverse; /* Direção da animação (normal, reverse, alternate, alternate-reverse). */
 }
