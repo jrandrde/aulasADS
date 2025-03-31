@@ -32,10 +32,10 @@
     <header>
       <h1>Site dinâmico em HTML</h1>
       <nav>
-        <a href="#apresentacao" class="text-white">Apresentação</a> |
-        <a href="#estruturacao" class="text-white">Estruturação</a> |
-        <a href="#formulario" class="text-white">Formulário</a> |
-        <a href="#multimidia" class="text-white">Multimídia</a>
+        <a href="#apresentacao" class-name="text-white">Apresentação</a> |
+        <a href="#estruturacao" class-name="text-white">Estruturação</a> |
+        <a href="#formulario" class-name="text-white">Formulário</a> |
+        <a href="#multimidia" class-name="text-white">Multimídia</a>
       </nav>
     </header>
 
@@ -125,6 +125,20 @@
       // Usando getElementByName()
       const emailInput = document.getElementsByName("email")[0];
       emailInput.placeholder = "Digite seu e-mail aqui";
+
+      // Criando um novo elemento
+      const newDiv = document.createElement("div");
+
+      // Definindo atributos para o novo elemento
+      newDiv.setAttribute("class", "alert alert-info");
+      newDiv.setAttribute("role", "alert");
+
+      // Adicionando conteúdo ao novo elemento
+      newDiv.textContent =
+        "Escrevi e saí correndo, pau no cu de quem ta lendo. <3";
+
+      // Adicionando o novo elemento ao DOM
+      document.body.appendChild(newDiv);
     </script>
   </body>
 </html>
