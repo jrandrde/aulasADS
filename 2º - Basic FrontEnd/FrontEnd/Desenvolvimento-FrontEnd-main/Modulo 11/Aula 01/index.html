@@ -1,0 +1,54 @@
+<!--
+    CONCEITO
+
+    O método GET é usado para enviar dados do formulário anexando-os à URL da página. 
+    Ele é útil quando você quer que os dados enviados possam ser vistos na barra de endereços do navegador. 
+    Por exemplo, se você estiver fazendo uma busca e quiser compartilhar o link com os resultados, o método GET é útil.
+
+    O método POST é usado para enviar dados do formulário de uma maneira que não fique visível na URL. 
+    Ele é mais seguro para enviar informações sensíveis, como senhas, porque os dados são enviados no corpo da solicitação HTTP. 
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exemplo de input e textarea</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Exemplo de formulários</h1>
+
+      <!-- Formulário utilizando o método GET -->
+      <form method="get" action="/pagina-de-destino-get">
+        <h2>Método GET</h2>
+
+        <!-- Campo de texto para nome -->
+        <label for="nome-get">Nome</label>
+        <input
+          type="text"
+          id="nome-get"
+          name="nome-get"
+          placeholder="Digite seu nome aqui" />
+
+        <!-- Botão para enviar o formulário -->
+        <button type="submit">Enviar (GET)</button>
+      </form>
+
+      <!-- Formulário utilizando o método GET -->
+      <form method="post" action="/pagina-de-destino-post">
+        <h2>Método POST</h2>
+
+        <!-- Campo de texto para nome -->
+        <label for="nome-post">Nome</label>
+        <input type="text" id="nome-post" placeholder="Digite seu nome aqui" />
+
+        <!-- Botão para enviar o formulário -->
+        <button type="submit">Enviar (POST)</button>
+      </form>
+    </div>
+  </body>
+</html>
