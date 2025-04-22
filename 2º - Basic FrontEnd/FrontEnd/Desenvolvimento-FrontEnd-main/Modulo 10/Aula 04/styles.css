@@ -1,0 +1,111 @@
+body {
+  font-family: "Courier New", Courier, monospace; /* Fonte do texto */
+  background-color: rgb(231, 233, 235); /* Adicionando cor ao fundo da página*/
+  margin: 0; /* Removendo margem padrão */
+  padding: 20px; /* Adicionando padding ao redor */
+  display: flex; /* Usando flexbox para centralizar */
+  justify-content: center; /* Centralizando horizontalmente */
+  align-items: center; /* Centralizando verticalmente */
+  min-height: 100vh; /* Altura mínima da tela inteira */
+}
+
+/* Estilizando o contêiner principal */
+.container {
+  text-align: center; /* Centralizando o texto */
+  background-color: white; /* Cor de fundo branca */
+  padding: 20px; /* Espaçamento interno */
+  border-radius: 10px; /* Bordas arredondadas */
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.1); /* Sombra ao redor */
+}
+
+/* Estilizando o cabeçalho */
+h1 {
+  margin-bottom: 20px; /* Espaçamento inferior */
+}
+
+/* Estilizando o grupo de botões */
+.button-group {
+  display: flex; /* Usando flexbox para organizar botões */
+  flex-wrap: wrap; /* Permitindo que os botões quebrem linha */
+  gap: 10px; /* Espaçamento entre os botões */
+  justify-content: center; /* Centralizando os botões */
+}
+
+/* Estilizando os botões */
+.btn {
+  padding: 10px 20px; /* Espaçamento interno */
+  border: none; /* Sem borda */
+  border-radius: 4px; /* Bordas arredondadas */
+  font-size: 16px; /* Tamanho da fonte */
+  cursor: pointer; /* Cursor de ponteiro */
+  transition: background-color 0.3s; /* Transição suave */
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1); /* Sombra ao redor */
+}
+
+/* Botão padrão */
+.btn {
+  background-color: #b8b5b5; /* Cor de fundo */
+  color: #000; /* Cor do texto */
+}
+
+.btn:hover {
+  background-color: #d5d5d5; /* Cor de fundo ao passar o mouse */
+}
+
+/* Botão primário */
+.btn-primary {
+  background-color: #007bff; /* Cor de fundo */
+  color: #fff; /* Cor do texto */
+}
+
+.btn-primary:hover {
+  background-color: #065bb6; /* Cor de fundo ao passar o mouse */
+}
+
+/* Botão de sucesso */
+.btn-succes {
+  background-color: #28a745; /* Cor de fundo */
+  color: #fff; /* Cor do texto */
+}
+
+.btn-succes:hover {
+  background-color: #1c7a31; /* Cor de fundo ao passar o mouse */
+}
+
+/* Botão de aviso */
+.btn-warning {
+  background-color: #ffc107; /* Cor de fundo */
+  color: #000; /* Cor do texto */
+}
+
+.btn-warning:hover {
+  background-color: #ca9904; /* Cor de fundo ao passar o mouse */
+}
+
+/* Botão de perigo */
+.btn-danger {
+  background-color: #dc3545; /* Cor de fundo */
+  color: #fff; /* Cor do texto */
+}
+
+.btn-danger:hover {
+  background-color: #b61c2b; /* Cor de fundo ao passar o mouse */
+}
+
+/* Botão desabilitado */
+.btn-disabled {
+  background-color: #e0e0e0; /* Cor de fundo */
+  color: #aaa; /* Cor do texto */
+  cursor: not-allowed; /* Cursor não permitido */
+}
+
+/* Botão com ícone */
+.btn-icon {
+  display: flex; /* Usando flexbox para alinhar ícone e texto */
+  align-items: center; /* Alinhando itens verticalmente */
+  gap: 5px; /* Espaçamento entre ícone e texto */
+}
+
+.btn-icon .icon {
+  font-size: 20px; /* Tamanho do ícone */
+}
