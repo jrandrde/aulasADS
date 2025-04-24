@@ -1,10 +1,10 @@
 <!--
     CONCEITO
+    O efeito rotate é uma transformação que você pode aplicar a elementos HTML para girá-los em torno de um ponto central. 
+    Esse efeito é feito usando CSS, a linguagem de estilo usada para definir a aparência das páginas web.
 
-    Um formulário é uma área em uma página web onde os usuários podem inserir dados e depois enviá-los para um servidor. 
-    Os formulários são usados para coisas como logins, registros, buscas e muito mais.
-
-    Submeter um formulário significa enviar os dados que o usuário inseriu para um servidor para processamento. 
+    Para girar um elemento, usamos a propriedade transform junto com o valor rotate no CSS. 
+    O valor rotate especifica o ângulo de rotação em graus (°).
 -->
 
 <!DOCTYPE html>
@@ -15,52 +15,13 @@
     <!-- Definindo a codificação de caracteres -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Tornando o site responsivo -->
-    <title>Exemplo de Submissão de Formulário</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>Exemplo de Efeito Rotate</title>
     <!-- Link para o arquivo CSS -->
+    <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body>
-    <div class="container">
-      <h1>Formulário de contato</h1>
-
-      <!-- Formulário para submissão -->
-      <!--
-            <form>: O elemento form é usado para criar um formulário. 
-            O atributo action especifica a URL para a qual os dados do formulário serão enviados. 
-            O atributo method especifica o método de envio, que pode ser GET ou POST. 
-            Neste exemplo, usamos POST para enviar os dados de forma oculta.
-
-            <button>: O elemento button com type="submit" é usado para criar um botão que envia os dados do formulário.
-        -->
-      <!-- Campo de texto para o nome -->
-      <form action="/pagina-de-destino" method="post">
-        <label for="nome">Nome</label>
-        <input
-          type="text"
-          id="nome"
-          name="nome"
-          placeholder="Escreva seu nome aqui" />
-
-        <!-- Campo de email -->
-        <label for="email">Email</label>
-        <input
-          type="text"
-          id="email"
-          name="email"
-          placeholder="Digite seu melhor email" />
-
-        <!-- Área de texto para a mensagem -->
-        <label for="mensagem">Mensagem</label>
-        <textarea
-          id="mensagem"
-          name="mensagem"
-          rows="4"
-          placeholder="Deixe aqui sua reclamação"></textarea>
-
-        <!-- Botão para enviar o formulário -->
-        <button type="submit">Enviar</button>
-      </form>
-    </div>
+    <!-- Div com a classe 'box' que aplicará o efeito de rotação -->
+    <div class="box">Rotacionar</div>
   </body>
 </html>
