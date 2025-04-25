@@ -1,0 +1,42 @@
+body {
+  background-color: whitesmoke;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+  margin: 0;
+  align-items: center;
+  min-height: 85vh;
+}
+
+.container {
+  background-color: rgb(218, 52, 52);
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: rgb(149, 112, 218);
+  color: aliceblue;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.267);
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(115, 72, 197);
+  color: bisque;
+}
+
+/* Classe que aplica o efeito de escala ao botão */
+.scale {
+  transform: scale(2); /* dobra o tamanho do botão */
+}
