@@ -1,8 +1,11 @@
 <!--
     CONCEITO
+    
+    O efeito skew é uma transformação que você pode aplicar a elementos HTML para incliná-los horizontalmente ou verticalmente, distorcendo a forma original. 
+    É como se você puxasse as bordas de um elemento para os lados ou para cima e para baixo, criando um efeito de inclinação ou distorção.
 
-    Uma mensagem de erro é um aviso que aparece quando algo dá errado em um formulário ou página web. 
-    Por exemplo, se você deixar um campo obrigatório vazio ou digitar um email em um formato incorreto, uma mensagem de erro pode aparecer para avisar você sobre o problema.
+    Para inclinar um elemento, usamos a propriedade transform junto com o valor skew no CSS. 
+    Podemos especificar a inclinação em graus (°) tanto para o eixo horizontal (X) quanto para o eixo vertical (Y).
 -->
 
 <!DOCTYPE html>
@@ -13,50 +16,27 @@
     <!-- Definindo a codificação de caracteres -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Tornando o site responsivo -->
-    <title>Exemplo de Mensagem de Erro</title>
-    <!-- Link para o arquivo CSS personalizado -->
+    <title>Exemplo de Efeito Skew</title>
     <link rel="stylesheet" href="styles.css" />
+    <!-- Link para o arquivo CSS -->
   </head>
-
   <body>
     <div class="container">
-      <h1>Formulário de contato</h1>
+      <h1>Efeito Skew</h1>
 
-      <!-- Formulário para submissão -->
-      <form>
-        <!-- Campo de texto para o nome -->
-        <label for="nome">Nome</label>
-        <input
-          type="text"
-          id="nome"
-          name="nome"
-          placeholder="Digite seu nome aqui"
-          required />
-        <span class="error-message">Por favor, insira seu nome.</span>
-
-        <!-- Campo de texto para o email -->
-        <label for="email">Email</label>
-        <input
-          type="text"
-          id="email"
-          name="email"
-          placeholder="Digite seu melhor email"
-          required />
-        <span class="error-message">Por favor, insira um e-mail válido.</span>
-
-        <!-- Área de texto para a mensagem -->
-        <label for="mensagem">Mensagem</label>
-        <textarea
-          name="mensagem"
-          id="mensagem"
-          rows="4"
-          placeholder="Deixe sua reclamação aqui."
-          required></textarea>
-        <span class="error-message">Por favor, deixe sua reclamação.</span>
-
-        <!-- Botão para enviar o formulário -->
-        <button type="submit">Enviar</button>
-      </form>
+      <!-- Botão que receberá o efeito de distorção -->
+      <button id="skewButton">Clique para distorcer</button>
     </div>
+
+    <script>
+      // Seleciona o botão pelo ID
+      const button = document.getElementById("skewButton");
+
+      // Adiciona um evento de clique ao botão
+      button.addEventListener("click", function () {
+        // Adiciona a classe 'skew' ao botão quando ele é clicado
+        button.classList.toggle("skew");
+      });
+    </script>
   </body>
 </html>
