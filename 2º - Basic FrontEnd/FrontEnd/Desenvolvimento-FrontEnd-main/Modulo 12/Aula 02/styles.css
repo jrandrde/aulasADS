@@ -29,6 +29,7 @@ button {
   color: aliceblue;
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.267);
   cursor: pointer;
+  transition: scale 1s;
 }
 
 button:hover {
