@@ -10,7 +10,7 @@ body {
 }
 
 .container {
-  background-color: rgb(218, 52, 52);
+  background-color: white;
   text-align: center;
   padding: 20px;
   border-radius: 10px;
@@ -38,5 +38,5 @@ button:hover {
 
 /* Classe que aplica o efeito de escala ao botão */
 .scale {
-  transform: scale(2); /* dobra o tamanho do botão */
+  transform: scale(1.5); /* dobra o tamanho do botão */
 }
