@@ -16,7 +16,7 @@ public class BubbleSort {
 		int n = arr.length; //Pega o tamanho do array
 		
 		//Loop externo: controla o número de "passagens"
-		//Em cada passagem, o maior elemento não ordenada flutua para a posição certa
+		//Em cada passagem, o maior elemento não ordenado flutua para a posição certa
 		for (int i=0; i < n - 1; i++) {
 			// Loop interno: percorre o array, comparando e trocando elementos adjacentes
             // A cada passagem 'i', os últimos 'i' elementos já estão no lugar certo
