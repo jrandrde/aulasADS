@@ -43,15 +43,16 @@ class MyStack {
     }
 
     public boolean isEmpty() {
-        return top == -1;
+        return top == -1; // Verifica e retorna se a stack está vazia 
     }
 }
 
 public class TransferStacks {
      public static void main (String[] args) {
-        MyStack sourceStack = new MyStack(5);
+        // Criando duas novas stacks
+        MyStack sourceStack = new MyStack(5); 
         MyStack destinationStack = new MyStack(5);
-
+        // Incluindo novos itens dentro da stack source
         sourceStack.push(10);
         sourceStack.push(20);
         sourceStack.push(30);
@@ -59,7 +60,7 @@ public class TransferStacks {
         sourceStack.push(50);
 
         System.out.println("\nArray original: " + sourceStack);
-
+        // Loop para retirar um item de uma stack e incluir em outra enquanto houver itens na source
         while(!sourceStack.isEmpty()) {
             int itemToInclude = sourceStack.pop();
             destinationStack.push(itemToInclude);
