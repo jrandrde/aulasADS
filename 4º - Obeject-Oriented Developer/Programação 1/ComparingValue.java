@@ -44,7 +44,7 @@ class MyStack {
 	}
 	
 	public void displayArray(){
-		for(int i = 0; i < top; i++){
+		for(int i = 0; i <= top; i++){
 			System.out.println(stackArray[i] + "");
 		}
 	}
@@ -78,12 +78,14 @@ public class ComparingValue{
 			}
 			tempStack.push(tempItem);
 		}
+		System.out.println("\nTemporary Array, in reversed order: ");
 		tempStack.displayArray();
 		
 		while(!tempStack.isEmpty()){
 			int tempItem = tempStack.pop();
 			stack.push(tempItem);
 		}
+		System.out.println("\nOriginal array in the right order: ");
 		stack.displayArray();
 		return found;
 	}
