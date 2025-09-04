@@ -24,27 +24,33 @@ class MyStack {
 
     public int pop() {
         if(top == -1){ // Verifica se a stack não está vazia
-            System.out.println("\nArray vazio! Não tem o que tirar.");
+            System.out.println("Array vazio! Não tem o que tirar.");
             return -1;
         }
 
         int itemToReturn = stackArray[top]; // Pega o item do topo
         top--; // Move a marcação do topo da stack (ex: posição 1 pra posição 0)
-        System.out.println("\nEsse é o item retirado: " + itemToReturn);
+        System.out.println("Esse é o item retirado: " + itemToReturn);
         return itemToReturn; // Retorna o item que acabamos de pegar
     }
 
     public void peek() {
         if(top == -1) { // Verifica se a stack não está vazia
-            System.out.println("\nArray vazio! Não tem o que mostrar.");
+            System.out.println("Array vazio! Não tem o que mostrar.");
             return;
         }
-        System.out.println("\nItem no topo: " + stackArray[top]); // Printa o item que está no topo
+        System.out.println("Item no topo: " + stackArray[top]); // Printa o item que está no topo
     }
 
     public boolean isEmpty() {
         return top == -1; // Verifica e retorna se a stack está vazia 
     }
+	
+	public void displayArray() {
+		for(int i = 0; i <= top; i++){
+			System.out.println(stackArray[i] + "");
+		}
+	}
 }
 
 public class TransferStacks {
@@ -59,15 +65,19 @@ public class TransferStacks {
         sourceStack.push(40);
         sourceStack.push(50);
 
-        System.out.println("\nArray original: " + sourceStack);
+        System.out.println("\nArray original: ");
+		sourceStack.displayArray();
+		
         // Loop para retirar um item de uma stack e incluir em outra enquanto houver itens na source
         while(!sourceStack.isEmpty()) {
             int itemToInclude = sourceStack.pop();
             destinationStack.push(itemToInclude);
-            System.out.println("\nItens removidos: " + itemToInclude);
+            System.out.println("Itens removidos: " + itemToInclude);
         }
-
-        System.out.println("\nArray final: " + destinationStack);
+		
+		System.out.println("\nArray final: ");
+		destinationStack.displayArray();
+        
     }
 
 }
